@@ -1,0 +1,78 @@
+@model CatalogoITT.Models.Libro
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Libro</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.autor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.autor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.edicion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.edicion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.editorial)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.editorial)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.isbn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.isbn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.paginas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.paginas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.clasificacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.clasificacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.anio_publicacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.anio_publicacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.registro_en_siabuk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.registro_en_siabuk)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.reserva)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.reserva)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.libro_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
