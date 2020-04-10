@@ -9,17 +9,43 @@
 </head>
 <body>
     <header>
-        
-    </header>
+        <div class="container">
+            <div id="container-header">
+                <figure class="logo_tecnm">
+                    <img src="img/logo_tecnm.png" alt="Logo del Tecnologíco Nacional de México" width="200">
+                </figure>
+
+                <div class="encabezado">
+                    <div class="instituto">
+                        <h1>Instituto Tecnolog&iacute;co de Tl&aacute;huac</h1>
+                    </div>
+                    <div class="acervo">
+                        <h1>Acervo Bibliogr&aacute;fico</h1>
+                    </div>
+                </div>
+
+                <figure class="logo_ittlahuac">
+                    <img src="img/logo_itt.png" alt="Logo del Instituto Tecnologíco de Tláhuac" width="70">
+                </figure>
+
+            </div>
+</header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - CatalogoITT - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted"> 
+        <div class="container-footer">
+            <div class="copyrigth">
+                &copy; 2020 - IT-Tl&aacute;huac Centro de Informaci&oacute;n -
+            </div>
+
+            <figure class="figure_logo_sep">
+                <img src="~/img/logo_sep.png" alt="logo de la sep" width="200"/>
+            </figure>
+            
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

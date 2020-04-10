@@ -58,10 +58,10 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
+/*body {
+  Margin bottom by footer height 
   margin-bottom: 60px;
-}
+}*/
 .footer {
   position: absolute;
   bottom: 0;
@@ -69,3 +69,97 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+
+#container-header {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #DDD;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -.2;
+    margin: 0px 0px;
+    /*text-transform: uppercase;*/
+}
+
+.logo_tecnm {
+
+    width: 200px;
+}
+
+.logo_ittlahuac {
+    margin-left:127px;
+    margin-right:3px;
+    width:70px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-interfaz{
+    margin-top:50px;
+}
+.title_form{
+    color:#00754A
+}
+.interfaz_busqueda {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 154px;
+    background-color: #fff;
+}
+
+#buscar {
+    height: 34px;
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.consultar {
+    height: 34px;
+    width: 280px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 1px;
+}
+
+.btnBuscar {
+    position: relative;
+    cursor: pointer;
+    height: 33px;
+    width: 80px;
+    font-size: 15px;
+    color: #fff;
+    background: #026fff;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    border-bottom: 3px solid #777;
+}
+
+.container-footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content:center
+}
+
+
