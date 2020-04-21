@@ -2,9 +2,23 @@
     ViewData["Title"] = "Acervo-IT Tláhuac";
 }
 
-<div class="text-center">
-    <div class="container-interfaz">
+    <div class="text-center">
         <h3 class="title_form">Ingresa el t&oacute;pico deseado</h3>
+        <div class="container-interfaz">
+            <div class="container-logo-ci">
+                <img src="~/img/logo_CI_ITTlahuac.png" alt="Logo del Centro de Información" width="300px" />
+            </div>
+            <div class="container-search">
+                <form action="/" method="post">
+                    <select>
+                        <option value="Titulo">T&iacute;tulo</option>
+                        <option value="Autor">Autor</option>
+                        <option value="Codigo">C&oacute;digo</option>
+                    </select>
+                    <input type="text" name="search-text" id="search-text" value="" placeholder="Ej, Algebra" />
+                    <input type="button" name="search-button" id="search-button" value="Buscar" />
+                </form>
+            </div>
+        </div>
+
     </div>
-    
-</div>

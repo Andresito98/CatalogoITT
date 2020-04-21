@@ -111,11 +111,31 @@ h1 {
     flex-direction: column;
 }
 
-.container-interfaz{
-    margin-top:50px;
+.container-interfaz {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*margin-top:50px;*/
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center
 }
 .title_form{
     color:#00754A
+}
+
+.container-search {
+    
+}
+.container-logo-ci{
+    margin:10px 10px 10px 10px
+}
+.text-center{
+    margin-top:50px;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center
 }
 .interfaz_busqueda {
     margin: 0 auto;
@@ -158,8 +178,14 @@ h1 {
 
 .container-footer {
     display: flex;
-    margin: 0 auto;
-    justify-content:center
+    /*margin: 0 auto;*/
+    justify-content: center
+}
+.container{
+    margin-bottom:auto;
+}
+.footer{
+    margin-top:0px;
 }
 
 
