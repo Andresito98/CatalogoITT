@@ -120,8 +120,32 @@ h1 {
     align-items: center;
     justify-content: center
 }
+.search-select{
+    height:38px;
+    font-size:16px;
+    width:150px;
+    text-align:start;
+    
+}
+#search-text {
+    margin-left:0px;
+    height: 38px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#search-button {
+    height: 38px;
+    width: 103px;
+    color: white;
+    font-size: 16px;
+    background-color: #00B568
+}
+    #search-button:hover {
+        background-color: #00754A
+    }
 .title_form{
-    color:#00754A
+    color:#00B268
 }
 
 .container-search {
@@ -154,27 +178,6 @@ h1 {
     border: 1px solid #ccc;
 }
 
-.consultar {
-    height: 34px;
-    width: 280px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #333;
-    border-radius: 1px;
-}
-
-.btnBuscar {
-    position: relative;
-    cursor: pointer;
-    height: 33px;
-    width: 80px;
-    font-size: 15px;
-    color: #fff;
-    background: #026fff;
-    border: 0;
-    border-radius: 0 3px 3px 0;
-    border-bottom: 3px solid #777;
-}
 
 .container-footer {
     display: flex;

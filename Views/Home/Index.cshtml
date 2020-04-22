@@ -9,13 +9,14 @@
                 <img src="~/img/logo_CI_ITTlahuac.png" alt="Logo del Centro de Información" width="300px" />
             </div>
             <div class="container-search">
-                <form action="/" method="post">
-                    <select>
+                <form action="/" method="post" class="align-items-md-center">
+                    <select class="search-select" autofocus="true">
+                        <option value="PalabraClave">Palabra clave</option>
                         <option value="Titulo">T&iacute;tulo</option>
                         <option value="Autor">Autor</option>
                         <option value="Codigo">C&oacute;digo</option>
                     </select>
-                    <input type="text" name="search-text" id="search-text" value="" placeholder="Ej, Algebra" />
+                    <input type="text" name="search-text" id="search-text" value="" placeholder="Ej, Algebra"  />
                     <input type="button" name="search-button" id="search-button" value="Buscar" />
                 </form>
             </div>
