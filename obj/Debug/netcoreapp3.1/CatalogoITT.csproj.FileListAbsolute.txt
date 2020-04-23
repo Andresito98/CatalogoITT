@@ -53,7 +53,6 @@ C:\Users\jose_\source\repos\CatalogoITT\bin\Debug\netcoreapp3.1\Pomelo.JsonObjec
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\CatalogoITT.Views.pdb
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\CatalogoITT.dll
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\CatalogoITT.pdb
-C:\Users\jose_\Source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\CatalogoITT.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jose_\Source\repos\CatalogoITT\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\jose_\Source\repos\CatalogoITT\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\jose_\Source\repos\CatalogoITT\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -147,3 +146,4 @@ C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libr
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Index.cshtml.g.cs
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LibroSimple.cshtml.g.cs
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Error.cshtml.g.cs
+C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\CatalogoITT.MvcApplicationPartsAssemblyInfo.cache

@@ -2,24 +2,24 @@
     ViewData["Title"] = "Acervo-IT Tláhuac";
 }
 
-    <div class="text-center">
-        <h3 class="title_form">Ingresa el t&oacute;pico deseado</h3>
-        <div class="container-interfaz">
-            <div class="container-logo-ci">
-                <img src="~/img/logo_CI_ITTlahuac.png" alt="Logo del Centro de Información" width="300px" />
-            </div>
-            <div class="container-search">
-                <form action="/" method="post" class="align-items-md-center">
-                    <select class="search-select" autofocus="true">
-                        <option value="PalabraClave">Palabra clave</option>
-                        <option value="Titulo">T&iacute;tulo</option>
-                        <option value="Autor">Autor</option>
-                        <option value="Codigo">C&oacute;digo</option>
-                    </select>
-                    <input type="text" name="search-text" id="search-text" value="" placeholder="Ej, Álgebra"  />
-                    <input type="button" name="search-button" id="search-button" value="Buscar" />
-                </form>
-            </div>
+<div class="text-center">
+    <h3 class="title_form">Ingresa el t&oacute;pico deseado</h3>
+    <div class="container-interfaz">
+        <div class="container-logo-ci">
+            <img src="~/img/logo_CI_ITTlahuac.png" alt="Logo del Centro de Información" width="300px" />
         </div>
-
+        <div class="container-search">
+            <form action="../Libro/Index" class="align-items-md-center">
+                <select class="search-select" id="search-select" autofocus='true'>
+                    <option value="Titulo">T&iacute;tulo</option>
+                    <option value="Autor">Autor</option>
+                    <option value="Codigo">C&oacute;digo</option>
+                </select>
+                <input type="text" name="search-text" id="search-text" value="" placeholder="Ej, Álgebra" />
+                <input type="submit" name="search-button" id="search-button" value="Buscar" />
+            </form>
+        </div>
     </div>
+
+</div>
+
