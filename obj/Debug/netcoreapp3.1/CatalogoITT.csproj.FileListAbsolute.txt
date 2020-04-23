@@ -145,3 +145,5 @@ C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libr
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Details.cshtml.g.cs
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Edit.cshtml.g.cs
 C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Index.cshtml.g.cs
+C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LibroSimple.cshtml.g.cs
+C:\Users\jose_\source\repos\CatalogoITT\obj\Debug\netcoreapp3.1\Razor\Views\Libro\Error.cshtml.g.cs

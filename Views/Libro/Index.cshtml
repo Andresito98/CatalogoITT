@@ -4,86 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Resultados de la b&uacute;squeda</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.edicion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.editorial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.isbn)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.paginas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.clasificacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.anio_publicacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.registro_en_siabuk)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.reserva)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.autor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.edicion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.editorial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.isbn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.paginas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.clasificacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.anio_publicacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.registro_en_siabuk)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.reserva)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.libro_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.libro_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.libro_id">Delete</a>
-            </td>
-        </tr>
+
+@foreach (var libro in Model)
+{
+   <partial name="LibroSimple" model="libro"/> 
 }
-    </tbody>
-</table>
+    
+<!--
+<a asp-action="Edit" asp-route-id="item.libro_id">Edit</a> |
+<a asp-action="Details" asp-route-id="item.libro_id">Details</a> |
+<a asp-action="Delete" asp-route-id="item.libro_id">Delete</a>
+    -->
