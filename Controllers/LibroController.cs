@@ -48,6 +48,12 @@ namespace CatalogoITT.Controllers
         {
             return View();
         }
+        // GET:Libro/Error
+        public IActionResult Error()
+        {
+            return View();
+        }
+        
 
         // POST: Libro/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
