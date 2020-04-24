@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CatalogoITT.Data;
 using CatalogoITT.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace CatalogoITT.Controllers
 {
@@ -20,9 +21,41 @@ namespace CatalogoITT.Controllers
         }
 
         // GET: Libro
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchSelect, string searchText)
         {
-            return View(await _context.Libros.ToListAsync());
+            string _inputOption = searchSelect;
+            string _inputText = searchText;
+
+            switch (_inputOption)
+            {
+                case "Titulo":
+                    var libroByTitle = _context.Libros
+                   .Where(n => n.nombre.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
+                   .ToList();
+
+                    if (libroByTitle == null)
+                    {
+                        return View("Error");
+                    }
+
+                    return View(libroByTitle);
+                    
+                case "Autor":
+                    var libroByAutor = _context.Libros
+                   .Where(n => n.autor.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
+                   .ToList();
+
+                    if (libroByAutor == null)
+                    {
+                        return View("Error");
+                    }
+
+                    return View(libroByAutor);
+
+
+            }
+
+            return View("Error");
         }
 
         // GET: Libro/Details/5

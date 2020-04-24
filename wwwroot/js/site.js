@@ -10,11 +10,14 @@ $('#search-button').on('click', function () {
         alert("¡Por favor ingresa al menos una palabra clave!");
         return false;
     } else {
-        var data = { "inputOption": inputOption, "inputText": inputText };
+        /*var data = { "inputOption": inputOption, "inputText": inputText };
         data = JSON.stringify(data);
         $.post('../Libro/Index', data, function (resp) {
             console.log(resp)
         })
-        return true;
+        return true;*/
+        $.get('../Libro/Index', inputOption, inputText, function () {
+            alert(inputOption + inputText);
+        });
     }
 });
