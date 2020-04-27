@@ -52,6 +52,14 @@ namespace CatalogoITT.Controllers
 
                     return View(libroByAutor);
 
+                case "Codigo":
+                    var libroByCodigo = _context.Libros
+                        .Where(n => n.registro_en_siabuk.Equals(_inputText)).ToList();
+
+                    if (libroByCodigo==null) {
+                        return View("Error");
+                    }
+                    return View(libroByCodigo);
 
             }
 
