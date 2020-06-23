@@ -33,11 +33,11 @@ namespace CatalogoITT.Controllers
                    .Where(n => n.nombre.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
                    .ToList();
 
-                    if (libroByTitle == null)
+                    if (!libroByTitle.Any())
                     {
                         return View("Error");
                     }
-
+                    
                     return View(libroByTitle);
                     
                 case "Autor":
@@ -45,18 +45,17 @@ namespace CatalogoITT.Controllers
                    .Where(n => n.autor.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
                    .ToList();
 
-                    if (libroByAutor == null)
+                    if (!libroByAutor.Any())
                     {
                         return View("Error");
                     }
-
                     return View(libroByAutor);
 
                 case "Codigo":
                     var libroByCodigo = _context.Libros
                         .Where(n => n.registro_en_siabuk.Equals(_inputText)).ToList();
 
-                    if (libroByCodigo==null) {
+                    if (!libroByCodigo.Any()) {
                         return View("Error");
                     }
                     return View(libroByCodigo);
