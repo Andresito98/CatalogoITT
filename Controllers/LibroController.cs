@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CatalogoITT.Data;
 using CatalogoITT.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace CatalogoITT.Controllers
 {
@@ -20,9 +21,48 @@ namespace CatalogoITT.Controllers
         }
 
         // GET: Libro
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchSelect, string searchText)
         {
-            return View(await _context.Libros.ToListAsync());
+            string _inputOption = searchSelect;
+            string _inputText = searchText;
+
+            switch (_inputOption)
+            {
+                case "Titulo":
+                    var libroByTitle = _context.Libros
+                   .Where(n => n.nombre.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
+                   .ToList();
+
+                    if (!libroByTitle.Any())
+                    {
+                        return View("Error");
+                    }
+                    
+                    return View(libroByTitle);
+                    
+                case "Autor":
+                    var libroByAutor = _context.Libros
+                   .Where(n => n.autor.Contains(_inputText, StringComparison.OrdinalIgnoreCase))
+                   .ToList();
+
+                    if (!libroByAutor.Any())
+                    {
+                        return View("Error");
+                    }
+                    return View(libroByAutor);
+
+                case "Codigo":
+                    var libroByCodigo = _context.Libros
+                        .Where(n => n.registro_en_siabuk.Equals(_inputText)).ToList();
+
+                    if (!libroByCodigo.Any()) {
+                        return View("Error");
+                    }
+                    return View(libroByCodigo);
+
+            }
+
+            return View("Error");
         }
 
         // GET: Libro/Details/5
@@ -48,6 +88,12 @@ namespace CatalogoITT.Controllers
         {
             return View();
         }
+        // GET:Libro/Error
+        public IActionResult Error()
+        {
+            return View();
+        }
+        
 
         // POST: Libro/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 

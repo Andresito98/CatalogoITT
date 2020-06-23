@@ -187,8 +187,20 @@ h1 {
 .container{
     margin-bottom:auto;
 }
-.footer{
-    margin-top:0px;
+.section-footer{
+
 }
 
 
+/*Vista parcial LibroSimple*/
+.container-libro {
+    padding: 12px 12px 12px 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+
+}
+//
+.footer-itt {
+    border-top: 1px solid #DDD
+}
